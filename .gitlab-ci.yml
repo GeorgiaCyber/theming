@@ -1,0 +1,26 @@
+---
+
+stages:
+  - Lint
+  - Build
+
+.lint:
+  stage: Lint
+  image: asciidoctor/docker-asciidoctor:latest
+  tags:
+    - docker
+  script: |
+    
+.build:
+  stage: Build
+  image: asciidoctor/docker-asciidoctor:latest
+  tags:
+    - docker
+  script: |
+    apk --update add grep
+    for i in $(grep -rlIi ":theme:" --include=*.adoc); do grep ':theme:' $i | awk '{print$2}'; done
+    asciidoctor-pdf -a pdf-themesdir=./resources/themes -a pdf-theme=gcc-theme-light.yml ./*/*.adoc -v
+
+
+
+  

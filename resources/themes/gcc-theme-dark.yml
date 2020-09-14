@@ -1,0 +1,82 @@
+brand:
+#primary palette
+  white: #ffffff
+  black: #000000
+  hm-green: #c1d72e
+  cool-grey: #9a9b9d
+#secondary palette
+  accent-breaker-bay: #50787f
+  sm-orange: #dc582a
+  accent-grey: #636467
+  logo-1: image:GCC_Horz_White.svg[width=68%]
+title-page:
+  logo:
+    image: image:GCC_Vert_stacked_4C.svg[width=50%]
+  font:
+    color: $brand-white
+    family: $base-font-family
+    style: bold
+  authors:
+    display: none
+    font-style: normal
+    font-color: $brand-hm-green
+  background-color: $brand-accent-grey
+page:
+  layout: portrait
+  background-color: $brand-black
+  margin: [1in, 1in, 1in, 1in]
+  size: Letter
+base:
+  font:
+    color: $brand-white
+    family: Helvetica
+    size: 12
+  line-height-length: 15
+  line-height: $base-line-height-length / $base-font-size
+  vertical-spacing: $base-line-height-length
+heading:
+  text-decoration: underline
+  text-decoration-color: $brand-hm-green
+  text-decoration-width: .5
+  font:
+    color: $brand-cool-grey
+    family: $base-font-family
+    size: 16
+    style: bold
+  line-height: 1.2
+  margin-bottom: 1
+  margin-top: 1
+link:
+  font-color: $brand-hm-green
+outline-list:
+  indent: $base-font-size * 1.5
+header:
+  font:
+    family: $base-font-family
+    color: $brand-black
+  border-color: $brand-hm-green
+  background-color: $brand-black
+  height: 0.75in
+  recto:
+    center:
+      content: $brand-logo-1
+  verso:
+    center:
+      content: $header-recto-center-content
+footer:
+  font:
+    family: $base-font-family
+    color: $brand-hm-green
+  border-color: $brand-hm-green
+  background-color: $brand-black
+  height: $base-line-height-length * 2
+  line-height: 1
+# /-- Digital (centered page numbers only)
+  columns: =100%
+  recto:
+    center:
+      content: '{page-number}'
+  verso:
+    center:
+      content: '{page-number}'
+
