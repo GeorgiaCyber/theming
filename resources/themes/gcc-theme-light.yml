@@ -61,6 +61,7 @@ footer:
   font:
     family: $base-font-family
     color: $brand-black
+  border-color: $brand-black
   background-color: $brand-hm-green
   height: $base-line-height-length * 2
   line-height: 1
