@@ -10,9 +10,7 @@ build:
     - docker
   script: |
     apk --update add grep
-    grep -lR ':pdf-theme:' ./* | while read i;\
-    do asciidoctor-pdf -a pdf-themesdir=./resources/themes\
-    -a pdf-theme="./$(grep ':pdf-theme:' $i | awk '{print $2}').yml" ${i} -v; done  
+    grep -lR ':pdf-theme:' ./* | while read i; do asciidoctor-pdf -a pdf-themesdir=./resources/themes -a pdf-theme="./$(grep ':pdf-theme:' $i | awk '{print $2}').yml" ${i}; done
   artifacts:
     paths:
       - ./*.pdf
