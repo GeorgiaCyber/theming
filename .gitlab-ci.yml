@@ -10,7 +10,7 @@ lint:
   tags:
     - docker
   script: |
-    apk --update add grep
+    apk --update --no-cache add grep parallel
     grep -rlIi ":pdf: true" --include \*.adoc ./*/* | parallel 'asciidoctor-pdf --timings -a allow-uri-read {}'
     
 build:
