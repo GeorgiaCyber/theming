@@ -10,6 +10,7 @@ lint:
   tags:
     - docker
   script: |
+    apk --update add grep
     grep -rlIi ":pdf: true" --include \*.adoc ./*/* | parallel 'asciidoctor-pdf --timings -a allow-uri-read {}'
     
 build:
@@ -18,6 +19,7 @@ build:
   tags:
     - docker
   script: |
+    apk --update add grep
     find ./*/*  -name '*.adoc' | while read i;\
     do theme=$(grep ':theme:' $i | awk '{print $2}');\
     asciidoctor-pdf -a pdf-themesdir=./resources/themes -a pdf-theme=gcc-theme-${theme}.yml ${i} -v; done
