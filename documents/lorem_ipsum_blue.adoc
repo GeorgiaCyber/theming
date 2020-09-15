@@ -24,9 +24,6 @@ https://en.wikipedia.org/wiki/Lorem_ipsum[lorem ipsum wiki],
 and https://en.wikipedia.org/wiki/Lorem_ipsum#Variations[lorem ipsum variations].
 . Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus volutpat nibh, ut mattis libero efficitur a. Ut rhoncus magna at porta tempus. Aenean sit amet vestibulum odio.
 
-Investing in these areas will allow the creation of fully-featured, emulated environments where one can re-create nearly any critical infrastructure system with all of its native idiosyncrasies so that
-the various operating systems, networking implementations, middleware, and software can be properly analyzed in a holistic manner.
-
 == Lorem ipsum 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus volutpat nibh, ut mattis libero efficitur a. Ut rhoncus magna at porta tempus. Aenean sit amet vestibulum odio. Donec maximus fringilla pretium. Sed imperdiet eros et justo rhoncus gravida ac at mauris. Donec et tincidunt elit, a egestas felis. Nullam ut tristique nisi. Praesent auctor tincidunt feugiat. Cras elementum ante tortor. Integer interdum accumsan augue venenatis facilisis. Donec mattis malesuada arcu, eget elementum ex pellentesque sit amet. Vestibulum in euismod purus. Curabitur hendrerit nibh ac consequat cursus. Vestibulum ornare sit amet enim eget lacinia. Aliquam vehicula viverra pretium. Vestibulum nec felis odio.
