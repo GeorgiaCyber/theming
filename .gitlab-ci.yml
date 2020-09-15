@@ -14,8 +14,6 @@ build:
     do theme=$(grep ':theme:' $i | awk '{print $2}');\
     asciidoctor-pdf -a pdf-themesdir=./resources/themes -a pdf-theme=gcc-theme-${theme}.yml ${i} -v; done
   artifacts:
-    paths:
-      - adoc_pdfs
     expire_in: 2 weeks
 
 
