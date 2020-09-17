@@ -1,7 +1,7 @@
 = Lorem Ipsum
 "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 Lorem Ipsum <lorem@ipsum.dolor>
-:pdf-theme: gcc-theme-dark.yml
+:pdf-theme: gcc-dark
 :doctype: pdf
 :toc:
 :title-page:
