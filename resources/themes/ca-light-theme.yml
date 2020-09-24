@@ -7,7 +7,7 @@ brand:
   accent-breaker-bay: #50787f
   sm-orange: #dc582a
   accent-grey: #636467
-  logo-1: image:ca_horz_4c.svg[width=50%]
+  logo-1: image:ca_horz_white.svg[width=46%]
 title-page:
   logo:
     image: image:ca_vert_stacked_4c.svg[width=40%]
