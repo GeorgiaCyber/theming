@@ -17,9 +17,9 @@ generate_pdf:
 
 generate_slides:
   script: |
-    grep -rlIi ":slides: true" --include=*.adoc | while read adoc;do asciidoctor-revealjs --timings --failure-level WARN -a revealjs_slideNumber=true -a customcss=./slides/css/gcc_custom.css -a revealjsdir=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0 $adoc; done
+    grep -rlIi ":slides: true" --include=*.adoc | while read adoc;do asciidoctor-revealjs --timings --failure-level WARN -a revealjs_slideNumber=true -a customcss=https://gitlab.com/gacybercenter/theming/-/jobs/761540247/artifacts/file/slides/css/gcc_custom.css -a revealjsdir=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0 $adoc; done
   artifacts:
-    # paths:
-    #   - slides/css/gcc_custom.css
+    paths:
+      - slides/css/gcc_custom.css
     untracked: true
     expire_in: 1 day
