@@ -3,7 +3,7 @@ Alan Cantrell
 v1.0, 2018-12-17
 //.images
 :slides: true
-:imagesdir: ./images  
+:imagesdir: https://gitlab.com/gacybercenter/theming/-/raw/1-revealjs_theme/slides/images/
 :source-highlighter: highlightjs
 :icons: font
 :title-slide-background-image: slide_title_blk.png
