@@ -1,0 +1,120 @@
+/* title slide customization (h1 is applied to text on the slide, color gold, with shadow) */
+.reveal section.title h1 {
+    margin-top: 2.3em;
+    color: #FFFFFF;
+    text-shadow: 4px 4px 4px #787878;
+}
+
+/* title slide customization (author name colored white) */
+.reveal section.author small {
+    margin-top: 15.3em;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+
+/* slide titles customization (font times new roman, gold color, swith shadow) */
+.reveal h2 {
+    font-size: 1.2em ;
+    color: #FFFFFF;
+    text-shadow: 4px 4px 4px #787878;
+}
+
+/* left aligns unordered lists (bullets) */
+.reveal ul {
+    font-size: .8em;
+    color: #FFFFFF;
+    text-align: left;
+    text-shadow: 4px 4px 4px #787878;
+}
+
+/* adds shadow to text in paragraphs */
+.reveal p {
+    font-size: .8em;
+    color: #FFFFFF;
+    text-shadow: 4px 4px 4px #787878;
+}
+
+/* a class selector, to custom some given text using the syntax "[GOLD]#some text#" more available at https://www.w3schools.com/colors/colors_hex.asp */
+
+.ORANGE {
+    color: #FCAF3E;
+    text-shadow: 4px 4px 4px #787878;
+}
+
+.RED {
+    color: #FF3171;
+    text-shadow: 4px 4px 4px #787878;
+}
+
+.CYAN {
+    color: #0ABAB5;
+    text-shadow: 4px 4px 4px #787878;
+}
+
+.GREEN {
+    color: #00AA00;
+    text-shadow: 4px 4px 4px #787878;
+}
+
+.SORANGE {
+    color: #FCAF3E;
+    text-shadow: 1px 1px 2px #787878;
+}
+
+.SRED {
+    color: #FF3171;
+    text-shadow: 1px 1px 2px #787878;
+}
+
+.SCYAN {
+    color: #0ABAB5;
+    text-shadow: 1px 1px 2px #787878;
+}
+
+.SGREEN {
+    color: #00AA00;
+    text-shadow: 1px 1px 2px #787878;
+}
+
+.LEFT {
+    text-align: left;
+}
+
+.WHITE {
+    color: #FFFFFF;
+    text-shadow: 4px 4px 4px #787878;
+}
+
+.BLACK {
+    color: #000000;
+    text-shadow: 4px 4px 4px #787878;
+}
+
+.GOLD {
+    color: #C2A227;
+    text-shadow: 4px 4px 4px #787878;
+}
+
+.SILVER {
+    color: #C0C0C0;
+    text-shadow: 4px 4px 4px #787878;
+}
+
+.GREY {
+    color: #808080;
+    text-shadow: 4px 4px 4px #787878;
+}
+
+/* data state tags */
+section[data-state="paragraph_left"] p {
+    text-align: left;
+}
+
+section[data-state="bullets_left"] ul {
+    text-align: left;
+}
+
+section[data-state="all_left"] div ul {
+    text-align: left;
+}
