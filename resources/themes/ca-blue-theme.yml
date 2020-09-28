@@ -21,6 +21,7 @@ title-page:
     font-style: normal
     font-color: $brand-cool-grey
   background-color: $brand-accent-breaker-bay
+  background_image: image:blue_cover.png[]
 page:
   layout: portrait
   margin: [1in, 1in, 1in, 1in]

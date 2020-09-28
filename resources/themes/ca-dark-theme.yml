@@ -20,7 +20,8 @@ title-page:
     display: none
     font-style: normal
     font-color: $brand-hm-green
-  background-color: $brand-accent-grey
+  # background-color: $brand-accent-grey
+  background_image: image:black_cover.png[]
 page:
   layout: portrait
   background-color: $brand-black

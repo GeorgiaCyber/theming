@@ -19,6 +19,7 @@ title-page:
     display: none
     font-style: normal
     font-color: $brand-cool-grey
+  background_image: image:white_cover.png[]
 page:
   layout: portrait
   margin: [1in, 1in, 1in, 1in]
