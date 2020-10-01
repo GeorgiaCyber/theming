@@ -1,4 +1,6 @@
-/* title slide customization (h1 is applied to text on the slide, color gold, with shadow) */
+
+
+
 .reveal section.title h1 {
     margin-top: 2.3em;
     color: #FFFFFF;
