@@ -39,7 +39,7 @@
     font-weight: 600;
     line-height: 1.2;
     color: #9a9b9d;
-    text-shadow: 2px 2px 2px #c1d72e;
+    text-shadow: 2px 2px 2px #535353;
     letter-spacing: normal;
     text-transform: uppercase;
     word-wrap: break-word; }
@@ -90,7 +90,7 @@ margin-left: 40px; }
 /* a class selector, to custom some given text using the syntax "[GOLD]#some text#" more available at https://www.w3schools.com/colors/colors_hex.asp */
 
 .HMGREEN {
-    color: #c1d72e
+    color: #c1d72e;
 }
 
 .LEFT {
@@ -109,3 +109,12 @@ section[data-state="bullets_left"] ul {
 section[data-state="all_left"] div ul {
     text-align: left;
 }
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+ .reveal section img {
+    margin: 15px 0px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 4px solid #c1d72e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
