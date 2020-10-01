@@ -20,12 +20,17 @@
 .reveal .controls {
     color: #c1d72e; }
 
+/* PROGRESS BAR */
+.reveal .progress {
+    background: #9a9b9d;
+    color: #c1d72e; }
+
 
 /* slide titles customization */
 .reveal h2 {
     font-size: 1.2em ;
-    color: #FFFFFF;
-    text-shadow: 4px 4px 4px #787878;
+    color: #9a9b9d;
+    text-shadow: 4px 4px 4px #4e4e4e;
 }
 
 /* left aligns unordered lists (bullets) */
