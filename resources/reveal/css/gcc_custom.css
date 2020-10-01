@@ -2,14 +2,15 @@
 
 
 .reveal section.title h1 {
-    font-size: 20px;
+    font-size: 60px;
     margin-top: 2.3em;
-    color: #9a9b9d;
+    color: #000000;
     text-shadow: 4px 4px 4px #787878;
 }
 
 /* title slide customization (author name colored white) */
 .reveal section.author small {
+    font-size: 30px;
     margin-top: 15.3em;
     font-weight: normal;
     color: #c1d72e;
