@@ -1,0 +1,5 @@
+*.html
+/.bundle
+/reveal.js
+Gemfile
+Gemfile.lock

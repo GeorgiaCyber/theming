@@ -8,10 +8,10 @@ brand:
   accent-breaker-bay: #50787f
   sm-orange: #dc582a
   accent-grey: #636467
-  logo-1: image:gcc_horz_white.svg[width=68%]
+  logo-1: image:../images/gcc_horz_white.svg[width=68%]
 title-page:
   logo:
-    image: image:gcc_vert_stacked_white.svg[width=50%]
+    image: image:../images/gcc_vert_stacked_white.svg[width=50%]
   font:
     color: $brand-white
     family: $base-font-family
@@ -21,7 +21,7 @@ title-page:
     font-style: normal
     font-color: $brand-cool-grey
   background-color: $brand-accent-breaker-bay
-  background_image: image:blue_cover.png[]
+  background_image: image:../images/blue_cover.png[]
 page:
   layout: portrait
   margin: [1in, 1in, 1in, 1in]

@@ -7,10 +7,10 @@ brand:
   accent-breaker-bay: #50787f
   sm-orange: #dc582a
   accent-grey: #636467
-  logo-1: image:ca_horz_white.svg[width=46%]
+  logo-1: image:../images/ca_horz_white.svg[width=46%]
 title-page:
   logo:
-    image: image:ca_vert_stacked_4c.svg[width=40%]
+    image: image:../images/ca_vert_stacked_4c.svg[width=40%]
   font:
     color: $brand-black
     family: $base-font-family
@@ -19,7 +19,7 @@ title-page:
     display: none
     font-style: normal
     font-color: $brand-cool-grey
-  background_image: image:white_cover.png[]
+  background_image: image:../images/white_cover.png[]
 page:
   layout: portrait
   margin: [1in, 1in, 1in, 1in]

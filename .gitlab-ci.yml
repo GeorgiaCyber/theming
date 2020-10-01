@@ -1,17 +1,22 @@
 ---
-
-stages:
-  - Build
-    
-build:
-  stage: Build
+default:
   image: asciidoctor/docker-asciidoctor:latest
   tags:
     - docker
+
+stages:
+  - Build
+
+build:
+  stage: Build
   script: |
-    apk --update add grep
-    grep -lR ':pdf-theme:' ./* | while read i; do asciidoctor-pdf -a pdf-themesdir=./resources/themes/ ${i}; done
-    rm -rf ./themes
+    find ./ -name "*.adoc" | while read i; do asciidoctor -r asciidoctor-pdf -r asciidoctor-revealjs \
+    -a pdf-themesdir=./resources/themes/ \
+    -a revealjsdir=https://cdn.jsdelivr.net/npm/reveal.js \
+    -a customcss=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/resources/reveal/css/gcc_custom.css \
+    ${i}; done
   artifacts:
+    paths:
+      - resources/reveal/css/gcc_custom.css
     untracked: True
     expire_in: 2 weeks

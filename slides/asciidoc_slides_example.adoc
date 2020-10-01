@@ -1,0 +1,234 @@
+= Adoc Slides Example
+Alan Cantrell
+v1.0, 2018-12-17
+//.images
+:backend: revealjs
+:imagesdir: https://gitlab.com/gacybercenter/theming/-/raw/1-revealjs_theme/resources/images/
+:source-highlighter: highlightjs
+:icons: font
+:title-slide-background-image: gcc_grey_title_bg.svg
+:revealjs_theme: black
+// :revealjs_transition: convex
+
+
+== Section Introduction
+
+This presentation is an example of different styling for slides to include the following:
+
+* Backgrounds per slide
+* Image placement
+* Video embedding
+* Transitions per slide
+* Vertical slide nesting
+
+Press the "esc" key for an overview of the entire presentation!
+
+image::gcc_grey_bg.svg[background, size=100%]
+
+
+== Customizing backgrounds 1
+
+There are several backgrounds for use. The goal is to use the similar backgrounds across all sections.
+Slides backgrounds are performed using the following syntax:
+----
+image::slide_background_blk.svg[background, size=100%]
+----
+
+image::gcc_black_bg.svg[background, size=100%]
+
+
+=== Customizing backgrounds 2
+
+Gray background:
+----
+image::slide_background_gry.svg[background, size=100%]
+----
+
+image::gcc_black_bg.svg[background, size=100%]
+
+
+=== Customizing backgrounds 3
+
+White background:
+----
+image::slide_background_wht.svg[background, size=100%]
+----
+
+image::gcc_black_bg.svg[background, size=100%]
+
+
+=== Customizing backgrounds 4
+
+Fade background:
+----
+image::slide_background_fade.svg[background, size=100%]
+----
+
+image::gcc_black_bg.svg[background, size=100%]
+
+
+== Customizing image placement 1
+
+image::napoleon.gif[]
+
+image::gcc_black_bg.svg[background, size=100%]
+
+
+=== Customizing image placement (stretched)
+
+To ensure the image doesn't interfere with your text use stretch and the image is resized to maximum size possible .
+
+[.stretch]
+image::napoleon.gif[]
+
+image::gcc_black_bg.svg[background, size=100%]
+
+
+=== Customizing image placement (Float Right)
+
+image::giphy.gif[width=300px,float=right]
+
+* I
+* Love
+* Making
+* Slides
+
+image::gcc_black_bg.svg[background, size=100%]
+
+
+=== Customizing image placement (Float Left)
+
+image::ace.gif[width=300px,float=left]
+
+* Using
+* Asciidoc
+* Slides
+* is
+* Lit
+
+image::gcc_black_bg.svg[background, size=100%]
+
+
+== Adding videos
+
+video::v5KUgGtK0_8[youtube, start=01, options=autoplay]
+
+* Slides can embed videos that are started automatically and can be set to a particular start time in the video.
+
+[%notitle,background-iframe="https://www.youtube.com/embed/jPj2MHAQgFs?rel=0&start=1&enablejsapi=1&autoplay=1&loop=1&playlist=jPj2MHAQgFs&&controls=0&modestbranding=1"]
+=== Background videos
+
+You can even use videos as a background for an extra "cyber" dynamic slide background!
+
+
+== Adding code syntax highlighting 1
+
+Creating raw sockets and stuff:
+
+[source, python]
+----
+import socket
+
+s= socket.socket(socket.FAMILY, socket.TYPE)
+----
+
+* socket family includes AF_INET(default), AF_INET6, and AF_UNIX
+* socket type includes SOCK_STREAM(default), SOCK_DGRAM, and SOCK_RAW
+
+image::gcc_black_bg.svg[background, size=100%]
+
+
+=== Adding code syntax highlighting 2
+
+* Netcat Scanner example:
+
+[source, bash]
+---
+for port in {1..65535}; do
+ nc -w 1 localhost $port > /dev/null && echo "Port $port open" || echo "Port $port closed";
+done;
+---
+
+image::gcc_black_bg.svg[background, size=100%]
+
+== Customizing slide transitions (convex)
+
+Some random text stuffs
+
+* Zoom
+* Slide
+* Fade
+
+image::gcc_black_bg.svg[background, size=100%]
+
+=== Customizing slide transitions (zoom)
+
+Just add the following above the header of the slide:
+[source, adoc]
+----
+[transition=zoom]
+=== Customizing slide transition (zoom)
+----
+
+
+image::gcc_black_bg.svg[background, size=100%]
+
+[transition=slide]
+=== Customizing slide transition (slide1)
+
+Just add the following above the header of the slide:
+[source, adoc]
+----
+[transition=slide]
+=== Customizing slide transition (slide1)
+----
+
+
+image::gcc_black_bg.svg[background, size=100%]
+
+[transition=slide]
+=== Customizing slide transition (slide2)
+
+animation slide 2
+
+image::gcc_black_bg.svg[background, size=100%]
+
+
+[transition=fade]
+=== Customizing slide transition (fade)
+
+Just add the following above the header of the slide:
+[source, adoc]
+----
+[transition=fade]
+=== Customizing slide transition (fade)
+----
+
+
+image::gcc_black_bg.svg[background, size=100%]
+
+== CSS Bypass for Customization
+
+Must reference a custom css file with styling overrrides!
+
+The example below reference the custom css used to create this slide's overrides
+
+[source, adoc]
+----
+[GOLD]#This is gold#
+[BLACK]#This is black#
+[WHITE]#This is white#
+----
+
+image::gcc_black_bg.svg[background, size=100%]
+
+=== CSS Bypass for Customization Implementation
+
+Must reference a custom css file with styling overrides!
+
+[GOLD]#This is gold#
+[BLACK]#This is black#
+[WHITE]#This is white#
+
+
+image::gcc_black_bg.svg[background, size=100%]
