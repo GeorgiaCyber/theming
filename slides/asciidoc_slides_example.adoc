@@ -6,7 +6,7 @@ v1.0, 2018-12-17
 :imagesdir: https://gitlab.com/gacybercenter/theming/-/raw/1-revealjs_theme/resources/images/
 :source-highlighter: highlightjs
 :icons: font
-:title-slide-background-image: gcc_grey_title_bg.svg[background, size=100%]
+:title-slide-background-image: gcc_black_title_bg.svg[background, size=100%]
 // :revealjs_theme: black
 // :revealjs_transition: convex
 
@@ -34,7 +34,7 @@ Slides backgrounds are performed using the following syntax:
 image::slide_background_blk.svg[background, size=100%]
 ----
 
-image::gcc_grey_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=100%]
 
 
 === Customizing backgrounds 2
@@ -44,7 +44,7 @@ Gray background:
 image::slide_background_gry.svg[background, size=100%]
 ----
 
-image::gcc_grey_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=100%]
 
 
 === Customizing backgrounds 3
@@ -54,7 +54,7 @@ White background:
 image::slide_background_wht.svg[background, size=100%]
 ----
 
-image::gcc_grey_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=100%]
 
 
 === Customizing backgrounds 4
@@ -64,14 +64,14 @@ Fade background:
 image::slide_background_fade.svg[background, size=100%]
 ----
 
-image::gcc_grey_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=100%]
 
 
 == Customizing image placement 1
 
 image::napoleon.gif[]
 
-image::gcc_grey_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=100%]
 
 
 === Customizing image placement (stretched)
@@ -81,7 +81,7 @@ To ensure the image doesn't interfere with your text use stretch and the image i
 [.stretch]
 image::napoleon.gif[]
 
-image::gcc_grey_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=100%]
 
 
 === Customizing image placement (Float Right)
@@ -93,7 +93,7 @@ image::giphy.gif[width=300px,float=right]
 * Making
 * Slides
 
-image::gcc_grey_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=100%]
 
 
 === Customizing image placement (Float Left)
@@ -106,7 +106,7 @@ image::ace.gif[width=300px,float=left]
 * is
 * Lit
 
-image::gcc_grey_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=100%]
 
 
 == Adding videos
@@ -135,7 +135,7 @@ s= socket.socket(socket.FAMILY, socket.TYPE)
 * socket family includes AF_INET(default), AF_INET6, and AF_UNIX
 * socket type includes SOCK_STREAM(default), SOCK_DGRAM, and SOCK_RAW
 
-image::gcc_grey_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=100%]
 
 
 === Adding code syntax highlighting 2
@@ -149,7 +149,7 @@ for port in {1..65535}; do
 done;
 ---
 
-image::gcc_grey_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=100%]
 
 == Customizing slide transitions (convex)
 
@@ -159,7 +159,7 @@ Some random text stuffs
 * Slide
 * Fade
 
-image::gcc_grey_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=100%]
 
 === Customizing slide transitions (zoom)
 
@@ -171,7 +171,7 @@ Just add the following above the header of the slide:
 ----
 
 
-image::gcc_grey_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=100%]
 
 [transition=slide]
 === Customizing slide transition (slide1)
@@ -184,14 +184,14 @@ Just add the following above the header of the slide:
 ----
 
 
-image::gcc_grey_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=100%]
 
 [transition=slide]
 === Customizing slide transition (slide2)
 
 animation slide 2
 
-image::gcc_grey_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=100%]
 
 
 [transition=fade]
@@ -205,7 +205,7 @@ Just add the following above the header of the slide:
 ----
 
 
-image::gcc_grey_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=100%]
 
 == CSS Bypass for Customization
 
@@ -220,7 +220,7 @@ The example below reference the custom css used to create this slide's overrides
 [WHITE]#This is white#
 ----
 
-image::gcc_grey_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=100%]
 
 === CSS Bypass for Customization Implementation
 
@@ -231,4 +231,4 @@ Must reference a custom css file with styling overrides!
 [WHITE]#This is white#
 
 
-image::gcc_grey_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=100%]
