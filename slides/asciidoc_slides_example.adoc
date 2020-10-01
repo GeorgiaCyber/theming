@@ -6,7 +6,7 @@ v1.0, 2018-12-17
 :imagesdir: https://gitlab.com/gacybercenter/theming/-/raw/1-revealjs_theme/resources/images/
 :source-highlighter: highlightjs
 :icons: font
-:title-slide-background-image: gcc_grey_title_bg.png[]
+:title-slide-background-image: gcc_grey_title_bg.svg
 // :revealjs_theme: black
 // :revealjs_transition: convex
 
