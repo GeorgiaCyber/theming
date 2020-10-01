@@ -11,7 +11,7 @@ build:
   stage: Build
   script: |
     find ./ -name "*.adoc" | while read i; do asciidoctor -r asciidoctor-pdf -r asciidoctor-revealjs \
-    -a pdf-themesdir=./theming/resources/themes/ \
+    -a pdf-themesdir=.resources/themes/ \
     -a revealjsdir=https://cdn.jsdelivr.net/npm/reveal.js \
     -a customcss=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/slides/css/gcc_custom.css \
     ${i}; done
