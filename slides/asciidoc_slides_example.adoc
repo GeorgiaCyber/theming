@@ -7,7 +7,7 @@ v1.0, 2018-12-17
 :source-highlighter: highlightjs
 :icons: font
 :title-slide-background-image: gcc_grey_title_bg.svg
-// :revealjs_theme: black
+:revealjs_theme: black
 // :revealjs_transition: convex
 
 
