@@ -30,7 +30,7 @@
 .reveal h2 {
     font-size: 1.2em ;
     color: #9a9b9d;
-    text-shadow: 4px 4px 4px #4e4e4e;
+    text-shadow: 2px 2px 2px #c1d72e;
 }
 
 /* left aligns unordered lists (bullets) */
@@ -38,7 +38,8 @@
     font-size: .8em;
     color: #FFFFFF;
     text-align: left;
-    text-shadow: 4px 4px 4px #787878;
+    display: block;
+    margin-left: 40px;
 }
 
 /* left aligns unordered lists (bullets) */
@@ -46,6 +47,8 @@
     font-size: .8em;
     color: #FFFFFF;
     text-align: left;
+    display: block;
+    margin-left: 40px;
 }
 
 /* adds shadow to text in paragraphs */
