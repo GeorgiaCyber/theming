@@ -16,22 +16,7 @@ build:
     -a customcss=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/resources/reveal/css/gcc_custom.css \
     ${i}; done
   artifacts:
+    paths:
+      - slides/css/gcc_custom.css
     untracked: True
     expire_in: 2 weeks
-
-# generate_pdf:
-#   script: |
-#     grep -lR ':pdf-theme:' --include=*.adoc | while read i; do asciidoctor-pdf -a pdf-themesdir=./resources/themes/ ${i}; done
-#     rm -rf ./themes
-#   artifacts:
-#     untracked: True
-#     expire_in: 1 day
-
-# generate_slides:
-#   script: |
-#     grep -rlIi ":slides: true" --include=*.adoc | while read adoc;do asciidoctor-revealjs --timings --failure-level WARN -a revealjs_slideNumber=true -a customcss=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/slides/css/gcc_custom.css -a revealjsdir=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2 $adoc; done
-#   artifacts:
-#     paths:
-#       - slides/css/gcc_custom.css
-#     untracked: true
-#     expire_in: 1 day
