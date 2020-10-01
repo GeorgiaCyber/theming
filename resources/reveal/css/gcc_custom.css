@@ -2,8 +2,9 @@
 
 
 .reveal section.title h1 {
+    font-size: 20px;
     margin-top: 2.3em;
-    color: #FFFFFF;
+    color: #9a9b9d;
     text-shadow: 4px 4px 4px #787878;
 }
 
@@ -11,7 +12,7 @@
 .reveal section.author small {
     margin-top: 15.3em;
     font-weight: normal;
-    color: #FFFFFF;
+    color: #c1d72e;
 }
 
 
