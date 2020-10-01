@@ -6,10 +6,9 @@ v1.0, 2018-12-17
 :imagesdir: https://gitlab.com/gacybercenter/theming/-/raw/1-revealjs_theme/resources/images/
 :source-highlighter: highlightjs
 :icons: font
-:title-slide-background-image: gcc_grey_title_bg.svg[]
+:title-slide-background-image: gcc_grey_title_bg.svg[background, size=100%]
 // :revealjs_theme: black
-:revealjs_transition: convex
-:revealjs_backgroundTransition: convex
+// :revealjs_transition: convex
 
 
 == Section Introduction
