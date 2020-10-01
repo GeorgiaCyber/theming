@@ -17,6 +17,6 @@ build:
     ${i}; done
   artifacts:
     paths:
-      - slides/css/gcc_custom.css
+      - resources/reveal/css/gcc_custom.css
     untracked: True
     expire_in: 2 weeks
