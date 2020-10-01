@@ -13,9 +13,8 @@ build:
     find ./ -name "*.adoc" | while read i; do asciidoctor -r asciidoctor-pdf -r asciidoctor-revealjs \
     -a pdf-themesdir=./resources/themes/ \
     -a revealjsdir=https://cdn.jsdelivr.net/npm/reveal.js \
+    -a customcss=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/resources/reveal/css/gcc_custom.css \
     ${i}; done
-    # -a customcss=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/resources/reveal/css/gcc_custom.css \
-
   artifacts:
     paths:
       - resources/reveal/css/gcc_custom.css
