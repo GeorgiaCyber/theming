@@ -18,7 +18,7 @@ build:
     ${i}; done
   artifacts:
     paths:
-      - resources/reveal/css/gcc_custom.css
+      - resources/css/gcc_custom.css
       - reveal.js
     untracked: True
     expire_in: 2 weeks
