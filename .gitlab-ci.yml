@@ -13,12 +13,12 @@ build:
     git clone -b 3.9.2 --depth 1 https://github.com/hakimel/reveal.js.git
     find ./ -name "*.adoc" | while read i; do asciidoctor -r asciidoctor-pdf -r asciidoctor-revealjs \
     -a pdf-themesdir=./resources/themes/ \
-    -a revealjsdir=./reveal.js \
-    -a customcss=./resources/css/gcc_custom.css \
+    -a revealjsdir=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/reveal.js \
+    -a customcss=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/resources/css/gcc_custom.css \
     ${i}; done
   artifacts:
     paths:
-      - resources/css/gcc_custom.css
+      - resources/reveal/css/gcc_custom.css
       - reveal.js
     untracked: True
     expire_in: 2 weeks
