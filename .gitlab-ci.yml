@@ -12,7 +12,7 @@ build:
   script: |
     find ./ -name "*.adoc" | while read i; do asciidoctor -r asciidoctor-pdf -r asciidoctor-revealjs \
     -a pdf-themesdir=./resources/themes/ \
-    -a revealjsdir=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/ \
+    -a revealjsdir=https://cdn.rawgit.com/hakimel/reveal.js/3.9.2/ \
     -a customcss=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/resources/reveal/css/gcc_custom.css \
     ${i}; done
   artifacts:
