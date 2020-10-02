@@ -34,6 +34,12 @@ Slides backgrounds are performed using the following syntax:
 image::slide_background_blk.svg[background, size=100%]
 ----
 
+[.notes]
+--
+These are notes and they should be here.
+--
+
+
 image::gcc_black_bg.svg[background, size=100%]
 
 
