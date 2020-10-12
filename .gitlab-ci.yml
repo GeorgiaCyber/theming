@@ -11,14 +11,15 @@ build:
   stage: Build
   script: |
     git clone -b 3.9.2 --depth 1 https://github.com/hakimel/reveal.js.git
-    find ./ -name "*.adoc" | while read i; do asciidoctor -r asciidoctor-pdf -r asciidoctor-revealjs \
+    find ./ -name "*.adoc" | while read i; do asciidoctor --failure-level WARN -v --trace --timings \
+    -r asciidoctor-pdf -r asciidoctor-revealjs \
     -a pdf-themesdir=./resources/themes/ \
     -a revealjsdir=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/reveal.js \
-    -a customcss=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/resources/css/gcc_custom.css \
+    -a customcss=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/resources/css/gcc_dark.css \
     ${i}; done
   artifacts:
     paths:
-      - resources/css/gcc_custom.css
+      - resources/css/gcc_dark.css
       - resources/images
       - reveal.js
     untracked: True

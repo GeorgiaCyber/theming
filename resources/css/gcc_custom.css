@@ -16,14 +16,22 @@
     color: #c1d72e;
 }
 
-/* NAVIGATION CONTROLS */
+/*********************************************
+ * Controls / Arrows
+ *********************************************/
 .reveal .controls {
-    color: #c1d72e; }
+    color: #c1d72e;
+    right: auto;
+    left: 112px;
+}
 
-/* PROGRESS BAR */
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
 .reveal .progress {
     background: #9a9b9d;
-    color: #c1d72e; }
+    color: #c1d72e;
+}
 
 /*********************************************
  * HEADERS
@@ -88,7 +96,6 @@ margin-left: 40px; }
 }
 
 /* a class selector, to custom some given text using the syntax "[GOLD]#some text#" more available at https://www.w3schools.com/colors/colors_hex.asp */
-
 .HMGREEN {
     color: #c1d72e;
 }
@@ -113,8 +120,14 @@ section[data-state="all_left"] div ul {
 /*********************************************
  * IMAGES
  *********************************************/
- .reveal section img {
+.reveal section img {
     margin: 15px 0px;
     background: rgba(255, 255, 255, 0.12);
     border: 4px solid #c1d72e;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.reveal section .data-background {
+    data-background: url("concrete_seamless.png");
+    background-repeat: repeat;
+}
