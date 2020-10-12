@@ -15,7 +15,7 @@ build:
     -r asciidoctor-pdf -r asciidoctor-revealjs \
     -a pdf-themesdir=./resources/themes/ \
     -a revealjsdir=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/reveal.js \
-    -a customcss=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/resources/css/gcc_custom.css \
+    -a customcss=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/resources/css/gcc_dark.css \
     ${i}; done
   artifacts:
     paths:
