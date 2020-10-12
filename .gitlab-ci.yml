@@ -19,7 +19,7 @@ build:
     ${i}; done
   artifacts:
     paths:
-      - resources/css/gcc_custom.css
+      - resources/css/gcc_dark.css
       - resources/images
       - reveal.js
     untracked: True
