@@ -3,7 +3,7 @@ Alan Cantrell
 v1.0, 2018-12-17
 //.images
 :backend: revealjs
-:imagesdir: https://gitlab.com/gacybercenter/theming/-/raw/1-revealjs_theme/resources/images/
+:imagesdir: ../resources/images/
 :source-highlighter: highlightjs
 :icons: font
 :title-slide-background-image: gcc_grey_title_bg.svg
@@ -33,6 +33,12 @@ Slides backgrounds are performed using the following syntax:
 ----
 image::slide_background_blk.svg[background, size=100%]
 ----
+
+[.notes]
+--
+These are notes and they should be here.
+--
+
 
 image::gcc_black_bg.svg[background, size=100%]
 
