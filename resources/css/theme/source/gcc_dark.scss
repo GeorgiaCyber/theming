@@ -45,6 +45,14 @@ section.has-light-background {
 	}
 }
 
+section.title h1{
+	font-size: 50px;
+	margin-top: 2.3em;
+	color: #000000;
+	text-shadow: 4px 4px 4px #787878;
+
+}
+
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
