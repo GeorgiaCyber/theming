@@ -23,7 +23,7 @@ This presentation is an example of different styling for slides to include the f
 
 Press the "esc" key for an overview of the entire presentation!
 
-image::gcc_grey_bg.svg[background, size=100%]
+image::gcc_grey_bg.svg[background, size=cover]
 
 
 == Customizing backgrounds 1
@@ -31,7 +31,7 @@ image::gcc_grey_bg.svg[background, size=100%]
 There are several backgrounds for use. The goal is to use the similar backgrounds across all sections.
 Slides backgrounds are performed using the following syntax:
 ----
-image::slide_background_blk.svg[background, size=100%]
+image::slide_background_blk.svg[background, size=cover]
 ----
 
 [.notes]
@@ -40,44 +40,44 @@ These are notes and they should be here.
 --
 
 
-image::gcc_black_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=cover]
 
 
 === Customizing backgrounds 2
 
 Gray background:
 ----
-image::slide_background_gry.svg[background, size=100%]
+image::slide_background_gry.svg[background, size=cover]
 ----
 
-image::gcc_black_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=cover]
 
 
 === Customizing backgrounds 3
 
 White background:
 ----
-image::slide_background_wht.svg[background, size=100%]
+image::slide_background_wht.svg[background, size=cover]
 ----
 
-image::gcc_black_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=cover]
 
 
 === Customizing backgrounds 4
 
 Fade background:
 ----
-image::slide_background_fade.svg[background, size=100%]
+image::slide_background_fade.svg[background, size=cover]
 ----
 
-image::gcc_black_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=cover]
 
 
 == Customizing image placement 1
 
 image::napoleon.gif[]
 
-image::gcc_black_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=cover]
 
 
 === Customizing image placement (stretched)
@@ -87,7 +87,7 @@ To ensure the image doesn't interfere with your text use stretch and the image i
 [.stretch]
 image::napoleon.gif[]
 
-image::gcc_black_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=cover]
 
 
 === Customizing image placement (Float Right)
@@ -99,7 +99,7 @@ image::giphy.gif[width=300px,float=right]
 * Making
 * Slides
 
-image::gcc_black_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=cover]
 
 
 === Customizing image placement (Float Left)
@@ -112,7 +112,7 @@ image::ace.gif[width=300px,float=left]
 * is
 * Lit
 
-image::gcc_black_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=cover]
 
 
 == Adding videos
@@ -141,7 +141,7 @@ s= socket.socket(socket.FAMILY, socket.TYPE)
 * socket family includes AF_INET(default), AF_INET6, and AF_UNIX
 * socket type includes SOCK_STREAM(default), SOCK_DGRAM, and SOCK_RAW
 
-image::gcc_black_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=cover]
 
 
 === Adding code syntax highlighting 2
@@ -155,7 +155,7 @@ for port in {1..65535}; do
 done;
 ---
 
-image::gcc_black_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=cover]
 
 == Customizing slide transitions (convex)
 
@@ -165,7 +165,7 @@ Some random text stuffs
 * Slide
 * Fade
 
-image::gcc_black_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=cover]
 
 === Customizing slide transitions (zoom)
 
@@ -177,7 +177,7 @@ Just add the following above the header of the slide:
 ----
 
 
-image::gcc_black_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=cover]
 
 [transition=slide]
 === Customizing slide transition (slide1)
@@ -190,14 +190,14 @@ Just add the following above the header of the slide:
 ----
 
 
-image::gcc_black_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=cover]
 
 [transition=slide]
 === Customizing slide transition (slide2)
 
 animation slide 2
 
-image::gcc_black_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=cover]
 
 
 [transition=fade]
@@ -211,7 +211,7 @@ Just add the following above the header of the slide:
 ----
 
 
-image::gcc_black_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=cover]
 
 == CSS Bypass for Customization
 
@@ -226,7 +226,7 @@ The example below reference the custom css used to create this slide's overrides
 [WHITE]#This is white#
 ----
 
-image::gcc_black_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=cover]
 
 === CSS Bypass for Customization Implementation
 
@@ -237,4 +237,4 @@ Must reference a custom css file with styling overrides!
 [WHITE]#This is white#
 
 
-image::gcc_black_bg.svg[background, size=100%]
+image::gcc_black_bg.svg[background, size=cover]
