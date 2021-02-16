@@ -10,7 +10,7 @@ stages:
 build:
   stage: Build
   script: |
-    git clone -b 3.9.2 --depth 1 https://github.com/hakimel/reveal.js.git
+    git clone -b 3.9.2 --depth 1 https://github.com/hakimel/reveal.js.git -c test
     find ./ -name "*.adoc" | while read i; do asciidoctor --failure-level WARN -v --trace --timings \
     -r asciidoctor-pdf -r asciidoctor-revealjs -r asciidoctor-diagram -r /resources/lib/c3js-block-macro.rb \
     -r /resources/lib/cloud-block-macro.rb -a icons=font -a experimental=true -a idprefix="" -a idseparator="-" \
