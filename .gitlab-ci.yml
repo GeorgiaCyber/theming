@@ -1,9 +1,9 @@
 ---
 stages:
-  - build
+  - Build
 
 .build:
-  stage: build
+  stage: Build
   image: asciidoctor/docker-asciidoctor:latest
   # tags:
   #   - docker
@@ -26,6 +26,7 @@ slides:
   script: |
     git clone -b 3.9.2 --depth 1 https://github.com/hakimel/reveal.js.git
     find ./ -name "*.adoc" | while read i; do asciidoctor --failure-level WARN -v --trace --timings \
+    -r asciidoctor-pdf \
     -r asciidoctor-revealjs \
     -a revealjsdir=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/reveal.js \
     -a customcss=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/reveal.js/css/gcc_dark.css \
