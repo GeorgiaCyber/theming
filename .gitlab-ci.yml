@@ -5,8 +5,8 @@ stages:
 .build:
   stage: build
   image: asciidoctor/docker-asciidoctor:latest
-  tags:
-    - docker
+  # tags:
+  #   - docker
 
 pdf:
   extends: .build
@@ -29,7 +29,7 @@ slides:
     -r asciidoctor-revealjs \
     -a revealjsdir=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/reveal.js \
     -a customcss=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/reveal.js/css/gcc_dark.css \
-    ${i}; done  
+    ${i}; done
   artifacts:
     paths:
       - resources/images
@@ -38,22 +38,3 @@ slides:
       - reveal.js/plugin
     untracked: True
     expire_in: 2 weeks
-
-
-# html:
-#   extends: .build
-#   script: |
-#     find ./ -name "*.adoc" | while read i; do asciidoctor --failure-level WARN -v --trace --timings \
-#     -r asciidoctor-pdf -r asciidoctor-revealjs \
-#     -a pdf-themesdir=./resources/themes/ \
-#     -a revealjsdir=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/reveal.js \
-#     -a customcss=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/reveal.js/css/gcc_dark.css \
-#     ${i}; done
-#   artifacts:
-#     paths:
-#       - resources/images
-#       - reveal.js
-#       - reveal.js/css/gcc_dark.css
-#       - reveal.js/plugin
-#     untracked: True
-#     expire_in: 2 weeks
