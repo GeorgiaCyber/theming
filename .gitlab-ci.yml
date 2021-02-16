@@ -12,6 +12,7 @@ build:
   script: |
     git clone -b 3.9.2 --depth 1 https://github.com/hakimel/reveal.js.git
     find ./ -name "*.adoc" | while read i; do asciidoctor --failure-level WARN -v --trace --timings \
+    -a icons=font -a experimental=true -a idprefix="" -a idseparator="-" \
     -r asciidoctor-pdf -r asciidoctor-revealjs -r asciidoctor-diagram \
     -a ./resources/lib/c3js-block-macro.rb -a ./resources/lib/cloud-block-macro.rb \
     -a source-highlighter=highlightjs -a highlightjs-theme=./resources/lib/highlight/styles/gruvbox-dark.min.css -a pdf-themesdir=./resources/themes/ \
@@ -26,5 +27,3 @@ build:
       - resources
     untracked: True
     expire_in: 2 weeks
-
-    -a icons=font -a experimental=true -a idprefix="" -a idseparator="-" \
