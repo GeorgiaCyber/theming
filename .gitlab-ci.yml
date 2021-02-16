@@ -13,12 +13,12 @@ build:
     find ./ -name "*.adoc" | while read i; do asciidoctor --failure-level WARN -v --trace --timings \
     -r asciidoctor-pdf -r asciidoctor-revealjs -r asciidoctor-diagram \
     -a ./resources/lib/c3js-block-macro.rb -a ./resources/lib/cloud-block-macro.rb \
-    -a icons=font -a experimental=true -a idprefix="" -a idseparator="-" -a plantuml-config=./resources/themes/plantuml.cfg \
+    -a icons=font -a experimental=true -a idprefix="" -a idseparator="-" \
     -a source-highlighter=highlightjs -a highlightjs-theme=./resources/lib/highlight/styles/gruvbox-dark.min.css -a pdf-themesdir=./resources/themes/ \
     -a customcss=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/resources/css/gcc_dark.css \
     -a revealjsdir=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0 -a revealjs_transition=slide -a revealjs_slideNumber=true \
     -a revealjs_width=1100 -a revealjs_height=700 -a revealjs_plugins=./resources/revealjs-plugins/revealjs-plugins.js \
-    -a docinfo=shared -a toc=macro -a toclevels=1 -a revealjs_plugin_pdf -a plantuml-config=./resources/themes/plantuml.cfg -D reveal \
+    -a docinfo=shared -a toc=macro -a toclevels=1 -a revealjs_plugin_pdf \
     ${i}; done   
   artifacts:
     paths:
