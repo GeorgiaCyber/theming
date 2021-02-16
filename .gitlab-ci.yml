@@ -11,8 +11,7 @@ build:
   stage: Build
   script: |
     find ./ -name "*.adoc" | while read i; do asciidoctor --failure-level WARN -v --trace --timings \
-    -r asciidoctor-pdf -r asciidoctor-revealjs -r asciidoctor-diagram \
-    -r /resources/lib/c3js-block-macro.rb -r /resources/lib/cloud-block-macro.rb \
+    -r asciidoctor-pdf -r asciidoctor-revealjs -r asciidoctor-diagram -r /resources/lib/cloud-block-macro.rb \
     -a icons=font -a experimental=true -a idprefix="" -a idseparator="-" -a plantuml-config=themes/plantuml.cfg \
     -a source-highlighter=highlightjs -a highlightjs-theme=lib/highlight/styles/gruvbox-dark.min.css -a pdf-themesdir=./resources/themes/ \
     -a customcss=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/resources/css/gcc_dark.css \
