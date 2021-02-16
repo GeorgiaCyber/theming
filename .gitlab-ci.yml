@@ -1,6 +1,6 @@
 ---
 stages:
-  - Build
+  - build
 
 .build:
   image: asciidoctor/docker-asciidoctor:latest
