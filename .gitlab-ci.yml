@@ -10,14 +10,13 @@ stages:
 build:
   stage: Build
   script: |
-    git clone -b 3.9.2 --depth 1 https://github.com/hakimel/reveal.js.git -c test
     find ./ -name "*.adoc" | while read i; do asciidoctor --failure-level WARN -v --trace --timings \
     -r asciidoctor-pdf -r asciidoctor-revealjs -r asciidoctor-diagram -r /resources/lib/c3js-block-macro.rb \
     -r /resources/lib/cloud-block-macro.rb -a icons=font -a experimental=true -a idprefix="" -a idseparator="-" \
     -a plantuml-config=/resources/themes/plantuml.cfg -a screenshot-dir-name=screenshots -a source-highlighter=highlight.js \
     -a highlightjsdir=/resources/lib/highlight -a highlightjs-theme=gruvbox-dark -a toc=left -a toclevels=2 -a sectanchors=true \
     -a sectnums=true -a sectlinks=true -a pdf-themesdir=./resources/themes/ \
-    -a revealjsdir=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/reveal.js \
+    -a revealjsdir=https://cdn.jsdelivr.net/npm/reveal.js@3.9.2 \
     -a customcss=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/resources/css/gcc_dark.css \
     -a stylesdir=/resources/themes/css '*.adoc' \
     ${i}; done
@@ -29,3 +28,7 @@ build:
       - reveal.js/plugins
     untracked: True
     expire_in: 2 weeks
+
+    # git clone -b 3.9.2 --depth 1 https://github.com/hakimel/reveal.js.git -c test
+    # -a revealjsdir=https://gitlab.com/gacybercenter/theming/-/jobs/$CI_JOB_ID/artifacts/raw/reveal.js \
+    
