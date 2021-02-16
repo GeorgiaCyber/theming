@@ -3,6 +3,7 @@ stages:
   - build
 
 .build:
+  stage: build
   image: asciidoctor/docker-asciidoctor:latest
   tags:
     - docker
